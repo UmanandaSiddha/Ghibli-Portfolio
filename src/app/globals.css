@@ -123,6 +123,13 @@
 	}
 }
 
+.rubik {
+	font-family: var(--font-rubik), sans-serif;
+}
+
+.poppins {
+	font-family: var(--font-poppins), sans-serif;
+}
 
 .name_underline::after {
 	content: "";

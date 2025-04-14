@@ -12,7 +12,7 @@ export default function Home() {
 		<>
 			{/* LEFT SIDE  */}
 			<FramerWrapper
-				className=" h-full w-auto flex flex-col justify-start gap-4"
+				className="h-full w-auto flex flex-col justify-center gap-4"
 				y={0}
 				x={-100}
 			>

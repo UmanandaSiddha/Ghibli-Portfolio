@@ -1,25 +1,11 @@
 "use client"
 import { cn } from "@/lib/utils";
-
-
-import {
-	Briefcase,
-	FolderGit2,
-	GraduationCap,
-	HomeIcon,
-	LightbulbIcon,
-	Mail,
-	MoreHorizontal,
-
-	User,
-} from 'lucide-react';
-
 import { Dock, DockIcon, DockItem, DockLabel } from '@/components/animation/DockAnimation';
-
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import FramerWrapper from "./animation/FramerWrapper";
 import { usePathname } from "next/navigation";
+import { FiHome, FiMail, FiMoreHorizontal, FiUser } from "react-icons/fi";
+import { LuFolderGit2, LuGraduationCap, LuLightbulb } from "react-icons/lu";
 
 const Navbar = () => {
 
@@ -27,50 +13,49 @@ const Navbar = () => {
 		{
 			title: 'Home',
 			icon: (
-				<HomeIcon className='h-full w-full ' />
+				<FiHome className='h-full w-full ' />
 			),
 			href: '/',
 		},
 		{
 			title: 'About',
 			icon: (
-				<User className='h-full w-full ' />
+				<FiUser className='h-full w-full ' />
 			),
 			href: '/about',
 		},
 		{
 			title: 'Skills',
 			icon: (
-				<LightbulbIcon className='h-full w-full ' />
+				<LuLightbulb className='h-full w-full ' />
 			),
 			href: '/skills',
 		},
 		{
 			title: 'Education',
 			icon: (
-				<GraduationCap className='h-full w-full ' />
+				<LuGraduationCap className='h-full w-full ' />
 			),
 			href: '/education',
 		},
 		{
 			title: 'Projects',
 			icon: (
-				<FolderGit2 className='h-full w-full ' />
+				<LuFolderGit2 className='h-full w-full ' />
 			),
 			href: '/projects',
 		},
-
 		{
 			title: 'Contact us',
 			icon: (
-				<Mail className='h-full w-full ' />
+				<FiMail className='h-full w-full ' />
 			),
 			href: '/contact',
 		},
 		{
 			title: 'More',
 			icon: (
-				<MoreHorizontal className='h-full w-full ' />
+				<FiMoreHorizontal className='h-full w-full ' />
 			),
 			href: '/more',
 		},
@@ -101,9 +86,8 @@ const Navbar = () => {
 			<Dock className='items-end pb-3 rounded-full'>
 				{data.map((item, idx) => (
 					<Link href={item.href} key={idx}>
-
 						<DockItem
-							className={cn("aspect-square rounded-full bg-gray-200 dark:bg-neutral-800", pathname === item.href && " bg-gray-100 !border !border-primary-sky")}
+							className={cn("aspect-square rounded-full bg-gray-200 dark:bg-neutral-800", pathname === item.href && " bg-gray-100 !border !border-[#2f7df4]")}
 						>
 							<DockLabel >{item.title}</DockLabel>
 							<DockIcon className={cn(pathname === item.href && "text-[#2f7df4]")}>{item.icon}</DockIcon>
