@@ -1,7 +1,5 @@
 import { MaskedImage } from "@/components/ui/masked-image";
 
-import React from 'react'
-
 const MaskedImageComponent = () => {
     return (
         <MaskedImage

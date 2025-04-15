@@ -1,7 +1,5 @@
 import logo from "../../public/lord.png";
 import Image from "next/image"
-import MaskedImageComponent from "./MaskedImage";
-import { MaskedImage } from "@/components/ui/masked-image";
 
 const HeroImage = () => {
 	return (
