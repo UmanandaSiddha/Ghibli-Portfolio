@@ -9,17 +9,11 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
-import { SendEmail } from "./SendEmail";
 
 const ContactForm = () => {
 	return (
 		<Card className="w-[250px] md:w-[450px] lg:w-[500px]">
-			<form
-				action={async (FormData) => {
-					"use server";
-					await SendEmail(FormData);
-				}}
-			>
+			<form>
 				<CardHeader>
 					<CardTitle className="icon_underline">Send me a mail.</CardTitle>
 					<CardDescription>
