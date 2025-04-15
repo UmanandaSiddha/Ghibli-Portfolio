@@ -34,11 +34,17 @@ type DockProps = {
 	magnification?: number;
 	spring?: SpringOptions;
 };
-type DockChildProps = {
+// type DockChildProps = {
+// 	width: MotionValue<number>;
+// 	isHovered: MotionValue<number>;
+// };
+interface DockChildProps {
 	width: MotionValue<number>;
 	isHovered: MotionValue<number>;
-};
-type DockItemProps = DockChildProps & {
+	children?: React.ReactNode;
+	className?: string;
+}
+type DockItemProps = {
 	className?: string;
 	children: React.ReactNode;
 };
@@ -163,9 +169,6 @@ function DockItem({ children, className }: DockItemProps) {
 			role='button'
 			aria-haspopup='true'
 		>
-			{/* {Children.map(children, (child) =>
-				cloneElement(child as React.ReactElement, { width, isHovered })
-			)} */}
 			{Children.map(children, (child) => {
 				if (React.isValidElement(child)) {
 					return cloneElement(child as React.ReactElement<DockChildProps>, {
@@ -175,17 +178,6 @@ function DockItem({ children, className }: DockItemProps) {
 				}
 				return child;
 			})}
-			{/* {Children.map(children, (child) => {
-				if (
-					child &&
-					typeof child === 'object' &&
-					'reactElement' in child &&
-					React.isValidElement(child)
-				) {
-					return cloneElement(child, { width, isHovered });
-				}
-				return child;
-			})} */}
 		</motion.div>
 	);
 }

@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const ContactForm = () => {
 	return (
 		<Card className="w-[250px] md:w-[450px] lg:w-[500px]">
-			<form>
+			<form className="">
 				<CardHeader>
 					<CardTitle className="icon_underline">Send me a mail.</CardTitle>
 					<CardDescription>
