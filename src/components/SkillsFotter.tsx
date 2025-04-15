@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 interface MyComponentProps {
-	items: Array<{ alt?: string; img?: any; name?: string; icon?: string }>;
+	items: Array<{ alt?: string; img?: string; name?: string; icon?: string }>;
 }
 
 const SkillsFooter: React.FC<MyComponentProps> = ({ items }) => {
