@@ -1,5 +1,7 @@
 import logo from "../../public/lord.png";
 import Image from "next/image"
+import MaskedImageComponent from "./MaskedImage";
+import { MaskedImage } from "@/components/ui/masked-image";
 
 const HeroImage = () => {
 	return (
@@ -12,6 +14,14 @@ const HeroImage = () => {
 				height={600}
 				width={600}
 			/>
+			{/* <MaskedImageComponent /> */}
+			{/* <MaskedImage
+				src="/public/lord.png"
+				alt="Description"
+				width={500}
+				height={500}
+				variant="shape6"
+			/> */}
 		</>
 	)
 }
