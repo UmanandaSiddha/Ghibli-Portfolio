@@ -6,69 +6,64 @@ export const portfolioConfig = {
 	location: "Bongaigaon, Assam, India",
 
 	// Contact Information
-	email: "umanandasiddha243@gmail.com", // Replace with actual email if available
+	email: "umanandasiddha243@gmail.com",
 
 	// Social Media Links
 	socialLinks: {
-		instgram: "https://www.facebook.com/shahina.khatun.1044",
-		twitter: "https://twitter.com/Taquiimam14",
-		linkedin: "https://www.linkedin.com/in/taqui-imam",
-		external: "https://tinyurl.com/MdTaquiImam",
-		github: "https://github.com/taqui-786", // Assuming this is the GitHub link
+		instgram: "https://www.instagram.com/shivaji9407/",
+		twitter: "https://x.com/TheFallen2428",
+		linkedin: "https://www.linkedin.com/in/umananda-siddha-399b95217/",
+		external: "",
+		github: "https://github.com/UmanandaSiddha",
 	},
 
 	// SEO Information
 	seo: {
-		ogImage: "https://mdtaquiimam.vercel.app/og-image.png",
-		url: "https://mdtaquiimam.vercel.app",
-		twitterHandle: "@Taquiimam14",
+		ogImage: "https://umanandasiddha.vercel.app/lord.png",
+		url: "https://umanandasiddha.vercel.app",
+		twitterHandle: "@TheFallen2428",
 		keywords: [
-			"md",
-			"taqui",
-			"imam",
-			"Md",
-			"MD",
-			"TAQUI",
-			"Taqui",
-			"Imam",
-			"Imam",
+			"Umananda",
+			"UMANANDA",
+			"SIDDHA",
+			"Siddha",
 			"Md Taqui Imam",
-			"md taqui imam",
-			"mdtaqui",
-			"mdtaquiimam",
-			"taqui imam",
-			"Taqui Imam",
-			"Taquiimam",
+			"umananda siddha",
+			"umananda",
+			"umanandasiddha",
+			"UmanandaSiddha",
 			"portfolio",
 			"web developer",
 			"web",
+			"full stack",
+			"backend developer",
 			"web dev",
 			"developer",
 			"PROGRAMMER ",
 			"programmer ",
-			"MD TAQUI IMAM ",
+			"UMANANDA SIDDHA ",
 			"website",
-			"@Taquiimam",
-			"Taquiimam",
-			"taqui developer",
+			"@TheFallen2428",
+			"Umananda Siddha",
+			"umananda developer",
 		],
 		authors: [
 			{
-				name: "Taqui Imam",
-				url: "https://github.com/taqui-786",
+				name: "Umananda Siddha",
+				url: "https://github.com/UmanandaSiddha",
 			},
 		],
 	},
 
 	// About Information
 	about: {
-		bio: "I am a Full Stack Web Developer from Ramgarh cantt, Jharkhand, India. I'm passionate about crafting web projects and contributing to open-source communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating pixel-perfect, user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
+		bio: "I am a Full Stack Web Developer from Bongaigaon Assam, India. I'm passionate about crafting web projects and contributing to open-source communities. I specialize in modern JavaScript / Typescript frameworks and responsive CSS design, focusing on creating pixel-perfect, user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design. I am more into Backend Development and always eager to explore more backend concepts",
 		hobbies: [
 			"Coding",
-			"Playing Games",
-			"Watching Anime",
-			"Tech Blog Writing",
-			"Creating Cool Projects",
+			"Playing Chess",
+			"Watching Movie",
+			"Blog Writing",
+			"Creating Real Projects",
 		],
 		personalInfo: {
 			language: "English UK",
@@ -183,145 +178,38 @@ export const portfolioConfig = {
 	// Education Information
 	education: [
 		{
-			degree: "Bachelor of Computer Application",
-			institution: "Ranchi University Jharkhand",
-			location: "Doranda College Ranchi",
+			degree: "Bachelor of Electronics and Communication Engineering",
+			institution: "Tezpur University",
+			location: "Tezpur University Napaam Tezpur Assam",
 			period: "July 2023 - 2026",
 			description:
-				"I am currently Studying Bachelor of Computer Application form Doranda College Ranchi a Goverment College of Ranchi. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of computer science.",
+				"I am currently Studying Bachelor of Electronics and Communication Engineering form Tezpur University Assam. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of computer science.",
 		},
 	],
 
 	// Projects Information
 	projects: [
 		{
-			title: "WePost- A modern, minimalistic social platform.",
+			title: "GDG BLOG- A modern, blog writing platform for GDG Tezpur University",
 			description:
-				"WePost is a modern, minimalistic social platform for sharing posts, like, follow, and engaging in comments etc.",
-			tags: ["Tanstack-Query", "PostgreSQL", "Shadcn Ui", "Nextjs"],
-			link: "https://we-post-dev.vercel.app",
-		},
-		{
-			title: "Devzone- A community chat app for devs",
-			description:
-				"DevZone is the ultimate chat platform for developers to connect, collaborate, and code together. Join the conversation and level up your coding journey.",
-			tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
-			link: "https://devzone-ti.vercel.app/",
-		},
-		{
-			title: "itZmyLink- One Page many Links",
-			description:
-				"itZmyLink is a simple platform where user can create a personalized page to showcase all your social media profiles in one place. ",
-			tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-			link: "https://github.com/taqui-786/itZmyLink",
-		},
-		{
-			title: "GitEstimate- Github estimate worth generator",
-			description:
-				"GitEstimate is a simple fun tool where user can generate their github estimate worth card just by entering their github username. ",
-			tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-			link: "https://github.com/taqui-786/GitEstimate",
-		},
-		{
-			title: "Mixcn-ui- Reusable components for Nextjs",
-			description:
-				"This is Nextjs app with a Collection of Nextjs Components - (Currently under Devlelopment) ",
-			tags: ["Nextjs", "Shadcnui", "Npx", "Library"],
-			link: "https://mixcn-ui.vercel.app",
-		},
-		{
-			title: "Rupeespot- All deals Product in one place",
-			description:
-				"This is a free tool to check price history charts for millions of products for popular Indian stores such as Amazon and Flipkart. ",
-			tags: ["Nextjs", "Freelancing", "MySQL"],
-			link: "https://rupeespot.com/",
-		},
-		{
-			title: "Formcraft- Build Type-Safe Forms with Zero Effort",
-			description:
-				"Create production-ready forms with Zod validation, React Hook Form, and TypeScript. Design, customize, and deploy in minutes.",
-			tags: ["Nextjs", "Shadcnui", "Zod", "React Hook Form "],
-			link: "https://formcraft-ti.vercel.app/",
-		},
-		{
-			title: "KryptoKapital- Investing in Cryptocurreny",
-			description:
-				"This is a platform for learning about cryptocurrency with many tools and festures. It is very big project. ",
-			tags: ["Nextjs", "Freelancing", "Supabase"],
-			link: "https://pro.kryptokapital.info/",
-		},
-		{
-			title: "FriendZ - A social media Platform",
-			description:
-				"FriendZ is a social media app made with modern tech stacks such as redis, Authjs etc. A user can Create, delete, like, comment Post. ",
-			tags: ["Redis", "Authjs", "Typescript", "Nextjs"],
-			link: "https://github.com/taqui-786/project-friendz",
-		},
-		{
-			title: "ChatApp- Simple instagram clone",
-			description:
-				"ChatApp is similar to instagram, you can create, edit, delete, like,comment, post and  Follow, unfollow users",
-			tags: ["Reactjs", "Javascript"],
-			link: "https://github.com/taqui-786/chatapp-api",
-		},
-		{
-			title: "Devletter - A Newsletter for devs",
-			description:
-				"Devletter ia a newsletter subscribing single page app made with Nextjs and Tailwindcss.",
-			tags: ["Nextjs", "Tailwindcss"],
-			link: "https://github.com/taqui-786/Devletter",
-		},
-		{
-			title: "CrouMaker - A Crousal Maker App",
-			description:
-				"Crousal Maker is a tool with in-built crousals templates edit and download it in any format.",
-			tags: ["Nextjs", "jsPDF", "html2canvas", "Shadcn Ui"],
-			link: "https://github.com/taqui-786/crousal-maker",
+				"GDG Blog is a modern, blog writing platform for sharing blog posts, like, follow, and engaging in comments etc.",
+			tags: ["MERN", "TipTap Editor", "Tailwind", "Reactjs", "Nodejs", "MongoDB", "Express"],
+			link: "https://github.com/UmanandaSiddha/GDSC_BLOG_MERN",
 		},
 	],
 
 	// More Links Information
 	moreLinks: [
 		{
-			title: "Dev.to",
+			title: "LeetCode",
 			description:
-				"I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
-			link: "https://dev.to/random_ti",
-		},
-		{
-			title: "Hashnode",
-			description:
-				"I write blogs on web development, trending tech stacks or javascript guide or tips in Hashnode",
-			link: "https://mdtaquiimam.hashnode.dev/",
-		},
-		{
-			title: "Medium",
-			description:
-				"I write blogs on web development, trending tech stacks or javascript guide or tips in Medium",
-			link: "https://medium.com/@mdtaqui.jhar",
-		},
-		{
-			title: "Daily.Dev",
-			description:
-				"I am also the member of Daily Dev squads and i also upload post on some squads.",
-			link: "https://app.daily.dev/taqui_786",
-		},
-		{
-			title: "Gumroad",
-			description:
-				"I also sell digital products on gumroad like Notion Templates and web projects etc.",
-			link: "https://mdtaquijhar.gumroad.com/",
-		},
-		{
-			title: "Buy Me a coffee",
-			description:
-				"Supports my content quality, new topics, and project creation.",
-			link: "https://www.buymeacoffee.com/taquidevloper",
+				"I solve DSA and programming problems here, I improve my problem solving skills here.",
+			link: "https://leetcode.com/u/UmanandaSiddha/",
 		},
 	],
 
 	// API Keys (should be in .env but referenced here)
 	apiKeys: {
-		resendApiKey: "YOUR_RESEND_API_KEY", // This should be loaded from environment variables in a real app
+		resendApiKey: "YOUR_RESEND_API_KEY",
 	},
 };

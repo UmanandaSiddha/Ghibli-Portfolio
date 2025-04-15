@@ -13,7 +13,7 @@ import { SendEmail } from "./SendEmail";
 
 const ContactForm = () => {
 	return (
-		<Card>
+		<Card className="w-[250px] md:w-[450px] lg:w-[500px]">
 			<form
 				action={async (FormData) => {
 					"use server";
