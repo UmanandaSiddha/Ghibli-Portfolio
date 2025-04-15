@@ -9,7 +9,7 @@ import {
 	type SpringOptions,
 	AnimatePresence,
 } from 'framer-motion';
-import {
+import React, {
 	Children,
 	cloneElement,
 	createContext,
@@ -34,7 +34,11 @@ type DockProps = {
 	magnification?: number;
 	spring?: SpringOptions;
 };
-type DockItemProps = {
+type DockChildProps = {
+	width: MotionValue<number>;
+	isHovered: MotionValue<number>;
+};
+type DockItemProps = DockChildProps & {
 	className?: string;
 	children: React.ReactNode;
 };
@@ -159,10 +163,29 @@ function DockItem({ children, className }: DockItemProps) {
 			role='button'
 			aria-haspopup='true'
 		>
-			{Children.map(children, (child) =>
-				// cloneElement(child as React.ReactElement, { width, isHovered } as any)
-				cloneElement(child as React.ReactElement)
-			)}
+			{/* {Children.map(children, (child) =>
+				cloneElement(child as React.ReactElement, { width, isHovered })
+			)} */}
+			{Children.map(children, (child) => {
+				if (React.isValidElement(child)) {
+					return cloneElement(child as React.ReactElement<DockChildProps>, {
+						width,
+						isHovered,
+					});
+				}
+				return child;
+			})}
+			{/* {Children.map(children, (child) => {
+				if (
+					child &&
+					typeof child === 'object' &&
+					'reactElement' in child &&
+					React.isValidElement(child)
+				) {
+					return cloneElement(child, { width, isHovered });
+				}
+				return child;
+			})} */}
 		</motion.div>
 	);
 }
