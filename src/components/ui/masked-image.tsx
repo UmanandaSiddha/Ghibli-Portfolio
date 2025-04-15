@@ -41,6 +41,7 @@ export const MaskedImage: React.FC<MaskedImageProps> = ({
 	className,
 }) => {
 	const maskUrl = getMaskUrl(variant);
+	console.log(maskUrl)
 
 	return (
 		<Image
