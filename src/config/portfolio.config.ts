@@ -13,8 +13,8 @@ export const portfolioConfig = {
 		instgram: "https://www.instagram.com/shivaji9407/",
 		twitter: "https://x.com/TheFallen2428",
 		linkedin: "https://www.linkedin.com/in/umananda-siddha-399b95217/",
-		external: "",
 		github: "https://github.com/UmanandaSiddha",
+		external: "",
 	},
 
 	// SEO Information
