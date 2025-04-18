@@ -1,15 +1,15 @@
-import { MaskedImage } from "@/components/ui/masked-image";
+import lord from "../../public/lord.png";
+import Image from "next/image";
 
-const MaskedImageComponent = () => {
-    return (
-        <MaskedImage
-            src="/lord.png"
-            alt="Description"
-            width={500}
-            height={500}
-            variant="shape6"
-        />
-    )
+export default function MaskedImage() {
+	return (
+		<div className="relative w-[400px] h-[400px]">
+			<Image
+				src={lord}
+				alt="Masked"
+				fill
+				className="object-cover custom-mask"
+			/>
+		</div>
+	);
 }
-
-export default MaskedImageComponent;
