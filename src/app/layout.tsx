@@ -3,7 +3,7 @@ import "./globals.css";
 import { Poppins, Rubik } from "next/font/google";
 import { portfolioConfig } from "@/config/portfolio.config";
 import Navbar from "@/components/Navbar";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
 	subsets: ["latin"],
